@@ -119,3 +119,18 @@ header{
   #slide3:checked ~ .slides .slide:nth-child(3) {
     display: block;
   }
+
+  /* section corpo */
+
+  .corpo{
+    text-align: center;
+  }
+
+  .corpo p{
+    margin: auto;
+    max-width: 600px;
+  }
+
+  .mosaico{
+    display: inline;
+  }
