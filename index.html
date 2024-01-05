@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ScCode - Oferecemos serviços de desenvolvimento web de alta qualidade.">
+    <meta name="keywords" content="ScCode, Desenvolvimento Web, HTML, CSS, Aplicações Web, Aplicações Mobile, Design de Sites, Criação de Sites, Desenvolvimento de Software, Tecnologia, Startup, Programação, Web Design, Mobile Design, UX, UI">
+    <meta name="author" content="ScCode">
     <link rel="stylesheet" href="css/style.css">
     <title>ScCode - Descomplicando a Sua Vida.</title>
 </head>
@@ -53,15 +56,73 @@
         <h2>ScCode</h2>
         <p>Na ScCode, nós transformamos ideias em realidade através do design e desenvolvimento web inovador. Nossa equipe é especializada em HTML e CSS, permitindo-nos criar sites personalizados que atendem às suas necessidades específicas.</p>
 
-        <div class="mosaico">
-            <img src="img/mosaico1.png" alt="">
-            <img src="img/mosaico2.png" alt="">
-            <img src="img/mosaico3.png" alt="">
-        </div>
-
     </section>
-          
 
+    <section class="mosaico">
+    <div class="container">
+
+        <div class="flex-mosaico">
+            <div style="background-image: url(img/mosaico1.png);" class="item-1-mosaico"></div><!--item-1-mosaico-->
+            <div class="item-2-mosaico">
+                <p>“Somos uma startup de tecnologia especializada no desenvolvimento de aplicações web e mobile. Nosso compromisso é entregar serviços de excelência, proporcionando um suporte estendido aos nossos clientes. Nosso objetivo é criar soluções inovadoras que impulsionem o crescimento e o sucesso dos negócios de nossos clientes.”</p>
+            </div><!--item-2-mosaico-->
+        </div><!--flex-mosaico-->
+
+        <div class="flex-mosaico">
+            <div style="background-image: url(img/mosaico2.png); order: 2;" class="item-1-mosaico"></div><!--item-1-mosaico-->
+            <div class="item-2-mosaico">
+                <p>“Oferecemos uma variedade de serviços de desenvolvimento web, incluindo design de sites empresariais, pessoais, lojas online e blogs. Nossa abordagem centrada no cliente garante que cada projeto seja concluído com a mais alta qualidade e atenção aos detalhes.”</p>
+            </div><!--item-2-mosaico-->
+        </div><!--flex-mosaico-->
+
+        <div class="flex-mosaico">
+            <div style="background-image: url(img/mosaico3.png);" class="item-1-mosaico"></div><!--item-1-mosaico-->
+            <div class="item-2-mosaico">
+                <p>“Estamos ansiosos para ajudá-lo a criar o site dos seus sonhos. Entre em contato conosco hoje para começar. Você pode utilizar o formulário de contato abaixo”</p>
+            </div><!--item-2-mosaico-->
+        </div><!--flex-mosaico-->
+
+    </div><!--container-->
+</section><!--mosaico-->
+
+<div class="container-form">  
+    <form id="contact" action="" method="post">
+      <h3>Contato Rápido</h3>
+      <h4>Envie uma mensagem informando o serviço que você deseja que entraremos em contato!</h4>
+      <fieldset>
+        <input placeholder="Seu Nome..." type="text" tabindex="1">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Seu Endereço de E-mail..." type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Seu número de telefone..." type="number" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Se você tiver um website coloque aqui..." type="url" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Escreva sua mensagem aqui...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+      </fieldset>
+    </form>
+   
+    
+  </div>
+
+  <div class="back-to-top" href="#"></div>
+
+<footer>
+    <div class="copy">
+    <p>&copy; 2024 ScCode. Todos os direitos reservados.</p>
+    <p>Rio Negrinho - Santa Catarina - Brasil</p>
+    <p>Desenvolvido por ScCode</p>
+    </div>
+</footer>
 
 </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </html>
