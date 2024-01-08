@@ -58,9 +58,10 @@ header{
 }
 
 .logo img{
-    width: 120px;
-    height: 100px;
+    width: 70px;
+    height: 80px;
     padding: 5px;
+    margin-top: 25px;
 }
 
 .menu ul{
@@ -149,11 +150,26 @@ header{
     display: block;
   }
 
+  .contato-inicio{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+
   /* section corpo e mosaico*/
 
   .corpo{
     text-align: center;
-    margin-bottom: 10px;
+    border: 1px black solid;
+    max-width: 1200px;
+    margin: auto;
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
   }
 
   .corpo p{
@@ -162,6 +178,10 @@ header{
     color: white;
     font-size: 15px;
   }
+
+.mosaicos{
+  border-radius: 5px;
+}
 
 .flex-mosaico{
     display: flex;
@@ -181,6 +201,7 @@ header{
 
 .item-2-mosaico p{
     color: white;
+    margin-bottom: 15px;
 }
 
 /* formulario de contato */
@@ -188,7 +209,7 @@ header{
 .container-form {
 	max-width:400px;
 	width:100%;
-	margin:0 auto;
+	margin: 0 7px auto auto;
 	position:relative;
 }
 
@@ -196,8 +217,9 @@ header{
 
 #contact {
 	background:#F9F9F9;
-	padding:25px;
-	margin:50px 0;
+  padding: 25px;
+  margin: 5px 0;
+  border-radius: 10px;
 }
 
 #contact h3 {
@@ -279,6 +301,84 @@ fieldset {
  color:#888;
 }
 
+/* estilos exemplos */
+
+.section-examples{
+  display: flex;
+  padding: 20px;
+}
+
+.exemplos{
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border: 3px #ccc solid;
+  height: 310px;
+  width: 300px;
+  border-radius: 9px;
+  background-color: cornsilk;
+}
+
+.exemplos img{
+  width: 250px;
+  height: 170px;
+  border: 2px #c16666 solid;
+  border-radius: 5px;
+}
+
+.exemplos p{
+  margin-bottom: 5px;
+}
+
+.exemplos a{
+  border: 2px #ccc solid;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: deepskyblue;
+  text-decoration: none;
+  border-radius: 9px;
+  color: white;
+  font-weight: bold;
+}
+
+.exemplos a:hover {
+  background-color: rgb(55, 101, 252);
+}
+
+/* contato */
+
+.forms-contato{
+    display: inline-block;
+    width: 1280px;
+    margin: auto;
+    text-align: center;
+}
+
+.whatsapp{
+  display: inline-block;
+  text-align: center;
+  margin: 50px 0;
+  height: 300px;
+  width: 250px;
+}
+
+.whatsapp img{
+  margin-top: 10px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.entrar-contato{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: #5c82ff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
 /* back to top */
 
 .back-to-top {
@@ -293,6 +393,7 @@ fieldset {
   right: 22px;
   width: 40px;
   z-index: 3;
+  margin-right: 70px;
 &::after {
     content: '▲';
     display: flex;
@@ -400,6 +501,10 @@ footer{
     height: 200px;
   }
 
+  .contato-inicio img{
+    display: none;
+  }
+
   .corpo p{
     max-width: 100%;
   }
@@ -409,7 +514,8 @@ footer{
   }
 
   .item-1-mosaico{
-    display: none;
+    display: block;
+    height: 200px; 
   }
 
   .item-1-mosaico, .item-2-mosaico{
@@ -420,5 +526,24 @@ footer{
   .item-2-mosaico{
     border: 1px #ccc solid;
     padding: 10px;
+  }
+
+  .section-examples {
+    display: inline;
+  }
+
+  .exemplos{
+    margin-bottom: 10px;
+  }
+
+  .forms-contato{
+    display: inline;
+  }
+
+  .whatsapp{
+    margin: auto;
+    border: 2px #ccc solid;
+    margin-left: 33px;
+    border: 3px #ccc solid;
   }
 }

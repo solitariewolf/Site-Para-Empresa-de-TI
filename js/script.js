@@ -32,3 +32,31 @@ function carousel() {
     slides[slideIndex-1].style.display = "block"; 
     setTimeout(carousel, 3000); // Muda a imagem a cada 3 segundos
 }
+
+//função da order
+
+window.addEventListener('resize', function() {
+  var width = window.innerWidth;
+  var item1 = document.getElementById('item1');
+
+  if (width <= 600) {
+      item1.style.order = '0';
+  } else {
+      item1.style.order = '2';
+  }
+});
+
+function checkWindowSize() {
+  var width = window.innerWidth;
+  var item1 = document.getElementById('item1');
+
+  if (width <= 600) {
+      item1.style.order = '0';
+  } else {
+      item1.style.order = '2';
+  }
+}
+
+window.addEventListener('resize', checkWindowSize);
+window.addEventListener('load', checkWindowSize);
+

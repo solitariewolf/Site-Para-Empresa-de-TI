@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>ScCode - Descomplicando a Sua Vida.</title>
 </head>
 <body>
@@ -59,66 +60,41 @@
     </div>
     </div>
 
-<div class="contato-inicio">
+<section class="forms-contato">
 
-    <div class="container-form">  
-        <form id="contact" action="send.php" method="post">
-          <h3>Contato Rápido</h3>
-          <h4>Envie uma mensagem informando o serviço que você deseja que entraremos em contato!</h4>
-          <fieldset>
-            <input placeholder="Seu Nome..." type="text" tabindex="1" name="nome" required>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Seu Endereço de E-mail..." type="email" tabindex="2" name="email" required>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Seu número de telefone..." type="number" tabindex="3" name="telefone" required>
-          </fieldset>
-          <fieldset>
-            <textarea placeholder="Escreva sua mensagem aqui...." tabindex="5" name="mensagem" required></textarea>
-          </fieldset>
-          <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
-          </fieldset>
-        </form>
+    <div class="contato-inicio">
+
+        <div class="container-form">  
+            <form id="contact" action="send.php" method="post">
+              <h3>Contato Rápido</h3>
+              <h4>Envie uma mensagem informando o serviço que você deseja que entraremos em contato!</h4>
+              <fieldset>
+                <input placeholder="Seu Nome..." type="text" tabindex="1" name="nome" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Seu Endereço de E-mail..." type="email" tabindex="2" name="email" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Seu número de telefone..." type="number" tabindex="3" name="telefone" required>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Escreva sua mensagem aqui...." tabindex="5" name="mensagem" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+              </fieldset>
+            </form>
+        </div>
+    
+        <img src="img/atendente.png" alt="">
     </div>
 
-    <img src="img/atendente.png" alt="">
-</div>
+    <div class="whatsapp">
+        <p>Ou se preferir entre em contato via Whatsapp clicando no icone abaixo</p>
+        <a href="#"><img src="img/whatsapp.png" alt="Whatsapp"></a>
+    </div>
 
-    <section class="corpo">
-
-        <h2>ScCode</h2>
-        <p>Na ScCode, nós transformamos ideias em realidade através do design e desenvolvimento web inovador. Nossa equipe é especializada em HTML e CSS, permitindo-nos criar sites personalizados que atendem às suas necessidades específicas.</p>
-
-    </section>
-
-    <section class="mosaico">
-    <div class="container">
-
-        <div class="flex-mosaico">
-            <div style="background-image: url(img/mosaico1.png);" class="item-1-mosaico"></div><!--item-1-mosaico-->
-            <div class="item-2-mosaico">
-                <p>“Somos uma startup de tecnologia especializada no desenvolvimento de aplicações web e mobile. Nosso compromisso é entregar serviços de excelência, proporcionando um suporte estendido aos nossos clientes. Nosso objetivo é criar soluções inovadoras que impulsionem o crescimento e o sucesso dos negócios de nossos clientes.”</p>
-            </div><!--item-2-mosaico-->
-        </div><!--flex-mosaico-->
-
-        <div class="flex-mosaico">
-            <div id="item1" style="background-image: url(img/mosaico2.png); order: 2;" class="item-1-mosaico"></div><!--item-1-mosaico-->
-            <div class="item-2-mosaico">
-                <p>“Oferecemos uma variedade de serviços de desenvolvimento web, incluindo design de sites empresariais, pessoais, lojas online e blogs. Nossa abordagem centrada no cliente garante que cada projeto seja concluído com a mais alta qualidade e atenção aos detalhes.”</p>
-            </div><!--item-2-mosaico-->
-        </div><!--flex-mosaico-->
-
-        <div class="flex-mosaico">
-            <div style="background-image: url(img/mosaico3.png);" class="item-1-mosaico"></div><!--item-1-mosaico-->
-            <div class="item-2-mosaico">
-                <p>“Estamos ansiosos para ajudá-lo a criar o site dos seus sonhos. Entre em contato conosco hoje para começar. Você pode utilizar o <b>botão laranja</b> que está abaixo ou o formulário de contato. Ou utilize nosso email <b>contato@sccode.tech</b></p>
-            </div><!--item-2-mosaico-->
-        </div><!--flex-mosaico-->
-
-    </div><!--container-->
-</section><!--mosaico-->
+</section>
 
   <div class="back-to-top" href="#"></div>
 
@@ -133,7 +109,7 @@
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
+        <script>
         window.Papercups = {
           config: {
             token: "816b54f7-11a0-4f55-b4f2-8602f5b759c9",
