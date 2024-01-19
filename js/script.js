@@ -60,3 +60,21 @@ function checkWindowSize() {
 window.addEventListener('resize', checkWindowSize);
 window.addEventListener('load', checkWindowSize);
 
+window.onload = function() {
+  setTimeout(function() {
+    var chatButton = document.querySelector('.Papercups-toggleButton.css-y1oyim'); // Substitua pelo seletor CSS correto
+    if (chatButton) {
+      chatButton.click();
+    }
+  }, 4000); // Atraso de 7 segundos
+};
+
+// abrir chat botão de ação
+
+function openChat() {
+  var chatButton = document.querySelector('.Papercups-toggleButton.css-y1oyim'); // Substitua pelo seletor CSS correto
+  if (chatButton) {
+    chatButton.click();
+  }
+}
+

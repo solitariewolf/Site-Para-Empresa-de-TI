@@ -48,8 +48,8 @@ header{
     text-align: center;
     border: 1px #ccc solid;
     height: 120px;
-   
-    background-color: rgb(55 119 229);
+    background: rgb(15,177,255);
+    background: linear-gradient(180deg, rgba(15,177,255,1) 0%, rgba(43,41,149,1) 58%, rgba(0,0,0,1) 100%);
 }
 
 .logo{
@@ -103,6 +103,26 @@ header{
   100% {outline-color: #ff0000;}
 }
 
+.btn-chamada{
+  text-align: center;
+  padding: 5px;
+}
+
+.btn-chamada button{
+  width: 250px;
+  height: 45px;
+  background-color: rgb(162, 0, 255);
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.btn-chamada button:hover{
+  background-color: rgb(75, 0, 119);
+}
 
 /* carrosel */
 
@@ -346,10 +366,18 @@ fieldset {
   padding: 20px;
 }
 
+.exemplos-container{
+  display: inline;
+  border: 2px rgb(0, 73, 207) solid;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 6px;
+}
+
 .exemplos{
   display: block;
   text-align: center;
-  margin: auto;
+  margin: 10px auto;
   padding: 10px;
   border: 3px #ccc solid;
   height: 310px;
@@ -370,6 +398,7 @@ fieldset {
 }
 
 .exemplos a{
+  min-width: 250px;
   border: 2px #ccc solid;
   padding: 10px;
   margin-top: 10px;
@@ -384,12 +413,25 @@ fieldset {
   background-color: rgb(55, 101, 252);
 }
 
+.img-exemplos{
+  text-align: center;
+}
+
+.img-exemplos img{
+  width: 300px;
+  height: 900px;
+  margin-top: 5px;
+  border: 2px rgb(13, 119, 133) solid;
+  border-radius: 5px;
+}
+
 /* contato */
 
 .secao-contato{
   text-align: center;
   font-size: 15px;
-  
+  color: white;
+  font-weight: bold;
 }
 
 .forms-contato{
@@ -592,6 +634,11 @@ footer{
 
   .section-examples {
     display: inline;
+  }
+
+  .exemplos-container{
+    display: inline;
+    border: none;
   }
 
   .exemplos{

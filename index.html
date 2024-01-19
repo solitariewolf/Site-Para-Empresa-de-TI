@@ -59,6 +59,10 @@
     </div>
     </div>
 
+    <div class="btn-chamada">
+        <button onclick="openChat()">Solicitar Orçamento</button>
+    </div>
+
     <section class="corpo" style="background-color: #efefef;">
 
         <h2>Técnologias que utilizamos</h2>
@@ -113,6 +117,9 @@
             <div style="background-image: url(img/mosaico1.png);" class="item-1-mosaico"></div><!--item-1-mosaico-->
             <div class="item-2-mosaico">
                 <p>“Somos uma startup de tecnologia especializada no desenvolvimento de aplicações web e mobile. Nosso compromisso é entregar serviços de excelência, proporcionando um suporte estendido aos nossos clientes. Nosso objetivo é criar soluções inovadoras que impulsionem o crescimento e o sucesso dos negócios de nossos clientes.”</p>
+                <div class="btn-chamada">
+                    <button onclick="openChat()" style="background-color: #6dff74;">Solicitar Orçamento</button>
+                </div>
             </div><!--item-2-mosaico-->
         </div><!--flex-mosaico-->
 
@@ -120,18 +127,28 @@
             <div id="item1" style="background-image: url(img/mosaico2.png); order: 2;" class="item-1-mosaico"></div><!--item-1-mosaico-->
             <div class="item-2-mosaico">
                 <p>“Oferecemos uma variedade de serviços de desenvolvimento web, incluindo design de sites empresariais, pessoais, lojas online e blogs. Nossa abordagem centrada no cliente garante que cada projeto seja concluído com a mais alta qualidade e atenção aos detalhes.”</p>
+                <div class="btn-chamada">
+                    <button onclick="openChat()" style="background-color: #a2bd0c;">Quero Meu Site Agora</button>
+                </div>
             </div><!--item-2-mosaico-->
         </div><!--flex-mosaico-->
 
         <div class="flex-mosaico">
             <div style="background-image: url(img/mosaico3.png);" class="item-1-mosaico"></div><!--item-1-mosaico-->
             <div class="item-2-mosaico">
-                <p>“Estamos ansiosos para ajudá-lo a criar o site dos seus sonhos. Entre em contato conosco hoje para começar. Você pode utilizar o <b>botão laranja</b> que está abaixo ou o formulário de contato. Ou utilize nosso email <b>contato@sccode.tech</b></p>
+                <p>“Estamos ansiosos para ajudá-lo a criar o site dos seus sonhos. Entre em contato conosco hoje para começar. Você pode utilizar o <b>botão roxo</b> que está abaixo ou o formulário de contato. Ou utilize nosso email <b>contato@sccode.tech</b></p>
+                <div class="btn-chamada">
+                    <button onclick="openChat()" style="background-color: #ff008c;">Falar Com Operador</button>
+                </div>
             </div><!--item-2-mosaico-->
         </div><!--flex-mosaico-->
 
     </div><!--container-->
 </section><!--mosaico-->
+
+<div class="btn-chamada">
+    <button onclick="openChat()">Solicitar Orçamento</button>
+</div>
 
   <div class="back-to-top" href="#"></div>
 
@@ -143,40 +160,41 @@
     </div>
 </footer>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    window.Papercups = {
+      config: {
+        token: "816b54f7-11a0-4f55-b4f2-8602f5b759c9",
+        inbox: "f0d7318a-9dc0-4cee-be99-26ea21f1b26b",
+        title: "Bem vindo a ScCode",
+        subtitle: "Por favor, digite sua mensagem aqui que em breve um operador irá te responder. 😊",
+        primaryColor: "#ff6900",
+        newMessagePlaceholder: "Inicie a conversa...",
+        showAgentAvailability: false,
+        agentAvailableText: "We're online right now!",
+        agentUnavailableText: "We're away at the moment.",
+        requireEmailUpfront: false,
+        iconVariant: "outlined",
+        baseUrl: "https://app.papercups.io"
+        // Optionally include data about your customer here to identify them
+        // customer: {
+        //   name: __CUSTOMER__.name,
+        //   email: __CUSTOMER__.email,
+        //   external_id: __CUSTOMER__.id,
+        //   metadata: {
+        //     plan: "premium"
+        //   }
+        // }
+      },
+    };
+    </script>
+    <script
+      type="text/javascript"
+      async
+      defer
+      src="https://app.papercups.io/widget.js"
+    ></script>
 </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        window.Papercups = {
-          config: {
-            token: "816b54f7-11a0-4f55-b4f2-8602f5b759c9",
-            inbox: "f0d7318a-9dc0-4cee-be99-26ea21f1b26b",
-            title: "Bem vindo a ScCode",
-            subtitle: "Por favor, digite sua mensagem aqui que em breve um operador irá te responder. 😊",
-            primaryColor: "#ff6900",
-            newMessagePlaceholder: "Inicie a conversa...",
-            showAgentAvailability: false,
-            agentAvailableText: "We're online right now!",
-            agentUnavailableText: "We're away at the moment.",
-            requireEmailUpfront: false,
-            iconVariant: "outlined",
-            baseUrl: "https://app.papercups.io"
-            // Optionally include data about your customer here to identify them
-            // customer: {
-            //   name: __CUSTOMER__.name,
-            //   email: __CUSTOMER__.email,
-            //   external_id: __CUSTOMER__.id,
-            //   metadata: {
-            //     plan: "premium"
-            //   }
-            // }
-          },
-        };
-        </script>
-        <script
-          type="text/javascript"
-          async
-          defer
-          src="https://app.papercups.io/widget.js"
-        ></script>
 </html>
