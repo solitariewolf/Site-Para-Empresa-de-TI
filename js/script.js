@@ -78,3 +78,21 @@ function openChat() {
   }
 }
 
+//captcha
+
+function generateCaptcha() {
+  var num1 = Math.floor(Math.random() * 9) + 1;
+  var num2 = Math.floor(Math.random() * 9) + 1;
+  document.getElementById('captcha').textContent = num1 + " + " + num2 + " = ";
+  return num1 + num2;
+}
+
+var correctCaptcha = generateCaptcha();
+
+document.getElementById('contact').addEventListener('submit', function(e) {
+  var userResponse = document.getElementById('captchaResponse').value;
+  if (userResponse != correctCaptcha) {
+    alert("Resposta do captcha incorreta!");
+    e.preventDefault();
+  }
+});

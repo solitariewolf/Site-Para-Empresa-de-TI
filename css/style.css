@@ -49,7 +49,7 @@ header{
     border: 1px #ccc solid;
     height: 120px;
     background: rgb(15,177,255);
-    background: linear-gradient(180deg, rgba(15,177,255,1) 0%, rgba(43,41,149,1) 58%, rgba(0,0,0,1) 100%);
+    background: rgb(55 119 229);
 }
 
 .logo{
@@ -80,15 +80,18 @@ header{
   text-align: center;
   list-style-type: none;
   cursor: pointer;
+  font-size: 17px;
   margin: 5px;
-  background-color: white;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(183,195,255,1) 33%, rgba(139,160,241,1) 82%);
   width: 90px;
-  height: 45px;
+  height: 95px;
   padding: 10px;
   border-radius: 5px;
+  border-bottom: none;
   box-shadow: 3px 3px 3px black;
   transition: all 0.5s ease;
 }
+
 
 .menu li:hover {
   background-color: #0CF;
@@ -293,6 +296,12 @@ header{
 	font-size:13px;
 }
 
+.captcha{
+  width: 140px;
+  margin: auto;
+}
+
+
 fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
@@ -331,6 +340,7 @@ fieldset {
 	margin:0 0 5px;
 	padding:10px;
 	font-size:15px;
+  border-radius: 5px;
 }
 
 #contact button[type="submit"]:hover {
@@ -357,6 +367,16 @@ fieldset {
 }
 :-ms-input-placeholder {
  color:#888;
+}
+
+.demo{
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+}
+
+.demo img{
+  width: 100%;
 }
 
 /* estilos exemplos */
@@ -534,6 +554,14 @@ footer{
     margin-left: 70%;
 }
 
+.hamburger p{
+  margin-top: -37px;
+  margin-left: 9px;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+}
+
 /* responsividade */
 @media screen and (max-width: 600px) {
   header{
@@ -656,7 +684,6 @@ footer{
   .whatsapp{
     margin: auto;
     border: 2px #ccc solid;
-    margin-left: 33px;
     border: 3px #ccc solid;
     max-width: 250px;
     margin-bottom: 5px;
@@ -664,5 +691,14 @@ footer{
 
   .email{
     max-width: 250px;
+  }
+
+  .demo{
+    max-width: 100%;
+  }
+
+  .demo img{
+      max-width: 100%;
+      cursor: pointer;
   }
 }

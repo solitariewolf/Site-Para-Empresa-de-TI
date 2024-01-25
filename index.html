@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <title>ScCode - Descomplicando a Sua Vida.</title>
 </head>
 <body>
@@ -22,15 +23,15 @@
         </div>
            
         <button class="hamburger">
+            <p>Menu</p>
             <span></span>
         </button>
             
         <section class="menu">
             <ul>
                 <a href="index.html"><li>Ínicio</li></a>
-                <a href="produtos.html"><li>Produtos</li></a>
+                <a href="servicos.html"><li>Serviços</li></a>
                 <a href="exemplos.html"><li>Exemplos</li></a>
-                <a href="clientes.html"><li>Clientes</li></a>
                 <a href="contato.html"><li>Contato</li></a>
             </ul>
         </section>
@@ -51,13 +52,11 @@
         <div class="slide">
         <img src="img/3.png" alt="Slide 3">
         </div>
+        <div class="slide">
+        <img src="img/4.png" alt="Slide 3">
+        </div>
     </div>
-    <div class="navigation">
-        <label for="slide1"></label>
-        <label for="slide2"></label>
-        <label for="slide3"></label>
-    </div>
-    </div>
+</div>
 
     <div class="btn-chamada">
         <button onclick="openChat()">Solicitar Orçamento</button>
@@ -80,27 +79,37 @@
 
     <div class="container-form">  
         <form id="contact" action="send.php" method="post">
-          <h3>Contato Rápido</h3>
-          <h4>Envie uma mensagem informando o serviço que você deseja que entraremos em contato!</h4>
-          <fieldset>
+        <h3>Contato Rápido</h3>
+        <h4>Envie uma mensagem informando o serviço que você deseja que entraremos em contato!</h4>
+        <fieldset>
             <input placeholder="Seu Nome..." type="text" tabindex="1" name="nome" required>
-          </fieldset>
-          <fieldset>
+        </fieldset>
+        <fieldset>
             <input placeholder="Seu Endereço de E-mail..." type="email" tabindex="2" name="email" required>
-          </fieldset>
-          <fieldset>
+        </fieldset>
+        <fieldset>
             <input placeholder="Seu número de telefone..." type="number" tabindex="3" name="telefone" required>
-          </fieldset>
-          <fieldset>
+        </fieldset>
+        <fieldset>
             <textarea placeholder="Escreva sua mensagem aqui...." tabindex="5" name="mensagem" required></textarea>
-          </fieldset>
-          <fieldset>
+        </fieldset>
+        <fieldset>
+            <div class="captcha">
+                <label id="captcha"></label>
+                <input type="text" id="captchaResponse" required>
+            </div>
+        </fieldset>
+        <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
-          </fieldset>
+        </fieldset>
         </form>
     </div>
 
     <img src="img/atendente.png" alt="">
+</div>
+
+<div class="demo">
+    <a href="exemplos.html"><img src="img/demo.png" alt="demonstração"></a>
 </div>
 
     <section class="corpo">
@@ -171,6 +180,7 @@
         title: "Bem vindo a ScCode",
         subtitle: "Por favor, digite sua mensagem aqui que em breve um operador irá te responder. 😊",
         primaryColor: "#ff6900",
+        greeting: "Olá, se você quer ter seu e-commerce ou um site para sua empresa ou pessoal, veio ao lugar certo, diga para gente o que deseja que em seguida responderemos.",
         newMessagePlaceholder: "Inicie a conversa...",
         showAgentAvailability: false,
         agentAvailableText: "We're online right now!",
