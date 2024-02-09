@@ -41,14 +41,58 @@ head{
     margin: 0 auto;
 }
 
+/* phone */
+
+.phone{
+  background-color: rgb(45, 189, 52);
+  font-weight: bold;
+  width: 150px;
+  height: 35px;
+  border-radius: 9px;
+  padding: 3px;
+  display: flex;
+  float: right;
+  margin-left: 5px;
+}
+
+.phone img{
+  height: 25px;
+  margin-top: 1px;
+}
+
+.phone p{
+  color: #000;
+  margin-left: 5px;
+}
+
+.email-header{
+  background-color: rgb(201, 157, 12);
+  font-weight: bold;
+  width: 190px;
+  height: 35px;
+  border-radius: 9px;
+  padding: 3px;
+  display: flex;
+  float: right;
+}
+
+.email-header img{
+  height: 25px;
+  margin-top: 1px;
+}
+
+.email-header p{
+  color: #000;
+  margin-left: 5px;
+}
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    border: 1px #ccc solid;
+    /* border: 1px #ccc solid; */
     height: 120px;
-    background: rgb(15,177,255);
     background: rgb(55 119 229);
 }
 
